@@ -2,6 +2,8 @@ import { createBrowserRouter } from "react-router";
 import Roots from "../pages/roots/Root";
 import Home from "../pages/home/home";
 import ErrorPage from "../pages/error-page/ErrorPage";
+import Apps from "../pages/Apps/Apps";
+import Installation from "../pages/Installation/Installation";
 
 // we crete router here and export it ,
 export const router = createBrowserRouter([
@@ -16,8 +18,16 @@ export const router = createBrowserRouter([
         index: true,
         path: "/",
         // load the books data in home page ;
-        loader: () => fetch("/booksData.json"),
-        Component: Home
+        loader: () => fetch("/TrendingApps.json"),
+        Component: Home,
+      },
+      {
+        path: "/apps",
+        Component: Apps,
+      },
+      {
+        path: "/installation",
+        Component: Installation,
       },
     ],
   },

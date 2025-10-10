@@ -1,0 +1,146 @@
+[
+  {
+    "id": 101,
+    "title": "TikTok",
+    "companyName": "ByteDance",
+    "image": "https://images.unsplash.com/photo-1611605698323-b1e99cfd37ea?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1074",
+    "description": "Short-form mobile video platform.",
+    "size": 115,
+    "reviews": "140M",
+    "ratingAvg": 4.5,
+    "downloads": "4.5B+",
+    "ratings": [
+      { "name": "1 star", "count": 8000000 },
+      { "name": "2 star", "count": 4000000 },
+      { "name": "3 star", "count": 12000000 },
+      { "name": "4 star", "count": 28000000 },
+      { "name": "5 star", "count": 88000000 }
+    ]
+  },
+  {
+    "id": 102,
+    "title": "WhatsApp Messenger",
+    "companyName": "Meta Platforms, Inc.",
+    "image": "https://images.unsplash.com/photo-1661862649743-2799867c32b0?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2hhdHNhcHAlMjBsb2dvfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500",
+    "description": "Free, secure, and reliable messaging and calling app.",
+    "size": 50,
+    "reviews": "220M",
+    "ratingAvg": 4.1,
+    "downloads": "5B+",
+    "ratings": [
+      { "name": "1 star", "count": 25000000 },
+      { "name": "2 star", "count": 15000000 },
+      { "name": "3 star", "count": 20000000 },
+      { "name": "4 star", "count": 50000000 },
+      { "name": "5 star", "count": 110000000 }
+    ]
+  },
+  {
+    "id": 103,
+    "title": "Instagram",
+    "companyName": "Meta Platforms, Inc.",
+    "image": "https://images.unsplash.com/photo-1611262588024-d12430b98920?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8SW5zdGFncmFtJTIwbG9nb3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=500",
+    "description": "Share photos and videos, watch Reels, and connect with friends.",
+    "size": 85,
+    "reviews": "180M",
+    "ratingAvg": 4.0,
+    "downloads": "5B+",
+    "ratings": [
+      { "name": "1 star", "count": 25000000 },
+      { "name": "2 star", "count": 18000000 },
+      { "name": "3 star", "count": 27000000 },
+      { "name": "4 star", "count": 40000000 },
+      { "name": "5 star", "count": 70000000 }
+    ]
+  },
+  {
+    "id": 104,
+    "title": "Spotify: Music and Podcasts",
+    "companyName": "Spotify AB",
+    "image": "https://images.unsplash.com/photo-1614680376593-902f74cf0d41?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8U3BvdGlmeSUyMGxvZ298ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=500",
+    "description": "Stream millions of songs and thousands of podcasts.",
+    "size": 40,
+    "reviews": "40M",
+    "ratingAvg": 4.4,
+    "downloads": "1B+",
+    "ratings": [
+      { "name": "1 star", "count": 2500000 },
+      { "name": "2 star", "count": 1500000 },
+      { "name": "3 star", "count": 4000000 },
+      { "name": "4 star", "count": 8000000 },
+      { "name": "5 star", "count": 24000000 }
+    ]
+  },
+  {
+    "id": 105,
+    "title": "Google Maps",
+    "companyName": "Google LLC",
+    "image": "https://images.unsplash.com/photo-1663124178667-28b3776d7c15?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8R29vZ2xlJTIwTWFwcyUyMGxvZ298ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=500",
+    "description": "Navigate your world faster and easier.",
+    "size": 150,
+    "reviews": "15M",
+    "ratingAvg": 4.1,
+    "downloads": "5B+",
+    "ratings": [
+      { "name": "1 star", "count": 1500000 },
+      { "name": "2 star", "count": 800000 },
+      { "name": "3 star", "count": 2200000 },
+      { "name": "4 star", "count": 3500000 },
+      { "name": "5 star", "count": 7000000 }
+    ]
+  },
+  {
+    "id": 106,
+    "title": "Subway Surfers",
+    "companyName": "SYBO Games",
+    "image": "https://s3.amazonaws.com/subwaysurfers/wp-content/uploads/2020/06/Subway-Surfer-Game-Icon.png",
+    "description": "Run and dodge in a thrilling endless runner game.",
+    "size": 140,
+    "reviews": "45M",
+    "ratingAvg": 4.6,
+    "downloads": "1B+",
+    "ratings": [
+      { "name": "1 star", "count": 1000000 },
+      { "name": "2 star", "count": 800000 },
+      { "name": "3 star", "count": 2500000 },
+      { "name": "4 star", "count": 8700000 },
+      { "name": "5 star", "count": 32000000 }
+    ]
+  },
+  {
+    "id": 107,
+    "title": "CapCut - Video Editor",
+    "companyName": "ByteDance Pte. Ltd.",
+    "image": "https://static.vecteezy.com/system/resources/previews/067/065/640/non_2x/capcut-logo-square-rounded-capcut-logo-capcut-logo-free-download-free-png.png",
+    "description": "All-in-one video editing tool for free.",
+    "size": 80,
+    "reviews": "20M",
+    "ratingAvg": 4.4,
+    "downloads": "500M+",
+    "ratings": [
+      { "name": "1 star", "count": 1500000 },
+      { "name": "2 star", "count": 800000 },
+      { "name": "3 star", "count": 2700000 },
+      { "name": "4 star", "count": 4500000 },
+      { "name": "5 star", "count": 10500000 }
+    ]
+  },
+  {
+    "id": 108,
+    "title": "ChatGPT",
+    "companyName": "OpenAI",
+    "image": "https://images.unsplash.com/photo-1678483789102-506fdcbe21f7?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1228",
+    "description": "Official mobile app for the popular AI chat bot.",
+    "size": 15,
+    "reviews": "2.5M",
+    "ratingAvg": 4.8,
+    "downloads": "100M+",
+    "ratings": [
+      { "name": "1 star", "count": 50000 },
+      { "name": "2 star", "count": 30000 },
+      { "name": "3 star", "count": 70000 },
+      { "name": "4 star", "count": 500000 },
+      { "name": "5 star", "count": 1850000 }
+    ]
+  }
+]

@@ -1,22 +1,39 @@
-import React from "react";
-import { Link } from "react-router";
+import { Link, NavLink } from "react-router";
 import logo from "../../assets/logo.png";
 
 import { CgMenuLeftAlt } from "react-icons/cg";
 import { FaGithub } from "react-icons/fa";
 
 const Header = () => {
+  // active btn calss
+  const baseClass =
+    "hover:text-[#632EE3] text-lg font-medium transition-all duration-200";
+  const activeClass =
+    "text-[#632EE3] text-lg font-bold border-b-2 border[#632EE3]";
+
+  // navbar link
   const listNav = (
     <>
-      <Link>
+      <NavLink
+        to="/"
+        className={({ isActive }) => `${isActive ? activeClass : baseClass}`}
+      >
         <li>Home</li>
-      </Link>
-      <Link>
+      </NavLink>
+
+      <NavLink
+        to="/apps"
+        className={({ isActive }) => `${isActive ? activeClass : baseClass}`}
+      >
         <li>Apps</li>
-      </Link>
-      <Link>
+      </NavLink>
+
+      <NavLink
+        to="/installation"
+        className={({ isActive }) => `${isActive ? activeClass : baseClass}`}
+      >
         <li>Installation</li>
-      </Link>
+      </NavLink>
     </>
   );
   return (

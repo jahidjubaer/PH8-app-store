@@ -1,0 +1,524 @@
+[
+  {
+    "id": 101,
+    "title": "TikTok",
+    "companyName": "ByteDance",
+    "image": "https://images.unsplash.com/photo-1611605698323-b1e99cfd37ea?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1074",
+    "description": "Short-form mobile video platform.",
+    "size": 115,
+    "reviews": "140M",
+    "ratingAvg": 4.5,
+    "downloads": "4.5B+",
+    "ratings": [
+      { "name": "1 star", "count": 8000000 },
+      { "name": "2 star", "count": 4000000 },
+      { "name": "3 star", "count": 12000000 },
+      { "name": "4 star", "count": 28000000 },
+      { "name": "5 star", "count": 88000000 }
+    ]
+  },
+  {
+    "id": 102,
+    "title": "WhatsApp Messenger",
+    "companyName": "Meta Platforms, Inc.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1200px-WhatsApp.svg.png",
+    "description": "Free, secure, and reliable messaging and calling app.",
+    "size": 50,
+    "reviews": "220M",
+    "ratingAvg": 4.1,
+    "downloads": "5B+",
+    "ratings": [
+      { "name": "1 star", "count": 25000000 },
+      { "name": "2 star", "count": 15000000 },
+      { "name": "3 star", "count": 20000000 },
+      { "name": "4 star", "count": 50000000 },
+      { "name": "5 star", "count": 110000000 }
+    ]
+  },
+  {
+    "id": 103,
+    "title": "Instagram",
+    "companyName": "Meta Platforms, Inc.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png",
+    "description": "Share photos and videos, watch Reels, and connect with friends.",
+    "size": 85,
+    "reviews": "180M",
+    "ratingAvg": 4.0,
+    "downloads": "5B+",
+    "ratings": [
+      { "name": "1 star", "count": 25000000 },
+      { "name": "2 star", "count": 18000000 },
+      { "name": "3 star", "count": 27000000 },
+      { "name": "4 star", "count": 40000000 },
+      { "name": "5 star", "count": 70000000 }
+    ]
+  },
+  {
+    "id": 104,
+    "title": "Spotify: Music and Podcasts",
+    "companyName": "Spotify AB",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/1200px-Spotify_logo_without_text.svg.png",
+    "description": "Stream millions of songs and thousands of podcasts.",
+    "size": 40,
+    "reviews": "40M",
+    "ratingAvg": 4.4,
+    "downloads": "1B+",
+    "ratings": [
+      { "name": "1 star", "count": 2500000 },
+      { "name": "2 star", "count": 1500000 },
+      { "name": "3 star", "count": 4000000 },
+      { "name": "4 star", "count": 8000000 },
+      { "name": "5 star", "count": 24000000 }
+    ]
+  },
+  {
+    "id": 105,
+    "title": "Google Maps",
+    "companyName": "Google LLC",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Google_Maps_icon.svg/1200px-Google_Maps_icon.svg.png",
+    "description": "Navigate your world faster and easier.",
+    "size": 150,
+    "reviews": "15M",
+    "ratingAvg": 4.1,
+    "downloads": "5B+",
+    "ratings": [
+      { "name": "1 star", "count": 1500000 },
+      { "name": "2 star", "count": 800000 },
+      { "name": "3 star", "count": 2200000 },
+      { "name": "4 star", "count": 3500000 },
+      { "name": "5 star", "count": 7000000 }
+    ]
+  },
+  {
+    "id": 106,
+    "title": "Subway Surfers",
+    "companyName": "SYBO Games",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/1/1d/Subway_Surfers_logo.png/250px-Subway_Surfers_logo.png",
+    "description": "Run and dodge in a thrilling endless runner game.",
+    "size": 140,
+    "reviews": "45M",
+    "ratingAvg": 4.6,
+    "downloads": "1B+",
+    "ratings": [
+      { "name": "1 star", "count": 1000000 },
+      { "name": "2 star", "count": 800000 },
+      { "name": "3 star", "count": 2500000 },
+      { "name": "4 star", "count": 8700000 },
+      { "name": "5 star", "count": 32000000 }
+    ]
+  },
+  {
+    "id": 107,
+    "title": "CapCut - Video Editor",
+    "companyName": "ByteDance Pte. Ltd.",
+    "image": "https://is5-ssl.mzstatic.com/image/thumb/Purple112/v4/4e/c8/10/4ec81014-41d6-d089-a2e6-79b8a6a68285/AppIcon-0-0-1x_U007emarketing-0-5-0-85-220.png/1200x630bb.png",
+    "description": "All-in-one video editing tool for free.",
+    "size": 80,
+    "reviews": "20M",
+    "ratingAvg": 4.4,
+    "downloads": "500M+",
+    "ratings": [
+      { "name": "1 star", "count": 1500000 },
+      { "name": "2 star", "count": 800000 },
+      { "name": "3 star", "count": 2700000 },
+      { "name": "4 star", "count": 4500000 },
+      { "name": "5 star", "count": 10500000 }
+    ]
+  },
+  {
+    "id": 108,
+    "title": "ChatGPT",
+    "companyName": "OpenAI",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/1024px-ChatGPT_logo.svg.png",
+    "description": "Official mobile app for the popular AI chat bot.",
+    "size": 15,
+    "reviews": "2.5M",
+    "ratingAvg": 4.8,
+    "downloads": "100M+",
+    "ratings": [
+      { "name": "1 star", "count": 50000 },
+      { "name": "2 star", "count": 30000 },
+      { "name": "3 star", "count": 70000 },
+      { "name": "4 star", "count": 500000 },
+      { "name": "5 star", "count": 1850000 }
+    ]
+  },
+  {
+    "id": 109,
+    "title": "Facebook",
+    "companyName": "Meta Platforms, Inc.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/1200px-2021_Facebook_icon.svg.png",
+    "description": "Connect with friends and family, and explore global events.",
+    "size": 75,
+    "reviews": "120M",
+    "ratingAvg": 3.9,
+    "downloads": "5B+",
+    "ratings": [
+      { "name": "1 star", "count": 20000000 },
+      { "name": "2 star", "count": 15000000 },
+      { "name": "3 star", "count": 25000000 },
+      { "name": "4 star", "count": 30000000 },
+      { "name": "5 star", "count": 30000000 }
+    ]
+  },
+  {
+    "id": 110,
+    "title": "Telegram Messenger",
+    "companyName": "Telegram FZ-LLC",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/1200px-Telegram_logo.svg.png",
+    "description": "Fast and secure messaging with large group chat capabilities.",
+    "size": 35,
+    "reviews": "11M",
+    "ratingAvg": 4.5,
+    "downloads": "1B+",
+    "ratings": [
+      { "name": "1 star", "count": 500000 },
+      { "name": "2 star", "count": 300000 },
+      { "name": "3 star", "count": 1200000 },
+      { "name": "4 star", "count": 3500000 },
+      { "name": "5 star", "count": 5500000 }
+    ]
+  },
+  {
+    "id": 111,
+    "title": "Netflix",
+    "companyName": "Netflix, Inc.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1200px-Netflix_2015_logo.svg.png",
+    "description": "Watch TV shows and movies, including award-winning Netflix originals.",
+    "size": 60,
+    "reviews": "15M",
+    "ratingAvg": 4.4,
+    "downloads": "1B+",
+    "ratings": [
+      { "name": "1 star", "count": 1000000 },
+      { "name": "2 star", "count": 500000 },
+      { "name": "3 star", "count": 1500000 },
+      { "name": "4 star", "count": 3500000 },
+      { "name": "5 star", "count": 8500000 }
+    ]
+  },
+  {
+    "id": 112,
+    "title": "YouTube",
+    "companyName": "Google LLC",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/1200px-YouTube_full-color_icon_%282017%29.svg.png",
+    "description": "Watch, subscribe, and share original videos.",
+    "size": 90,
+    "reviews": "100M",
+    "ratingAvg": 4.1,
+    "downloads": "5B+",
+    "ratings": [
+      { "name": "1 star", "count": 15000000 },
+      { "name": "2 star", "count": 10000000 },
+      { "name": "3 star", "count": 15000000 },
+      { "name": "4 star", "count": 25000000 },
+      { "name": "5 star", "count": 35000000 }
+    ]
+  },
+  {
+    "id": 113,
+    "title": "Snapchat",
+    "companyName": "Snap Inc.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/a/ad/Snapchat_logo.svg/1200px-Snapchat_logo.svg.png",
+    "description": "Fast-paced visual messaging with filters and stories.",
+    "size": 70,
+    "reviews": "25M",
+    "ratingAvg": 4.2,
+    "downloads": "1B+",
+    "ratings": [
+      { "name": "1 star", "count": 3000000 },
+      { "name": "2 star", "count": 1500000 },
+      { "name": "3 star", "count": 4000000 },
+      { "name": "4 star", "count": 7500000 },
+      { "name": "5 star", "count": 9000000 }
+    ]
+  },
+  {
+    "id": 114,
+    "title": "Pinterest",
+    "companyName": "Pinterest, Inc.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Pinterest-logo.png/1200px-Pinterest-logo.png",
+    "description": "Discover and save creative ideas for everything from food to fashion.",
+    "size": 65,
+    "reviews": "10M",
+    "ratingAvg": 4.5,
+    "downloads": "1B+",
+    "ratings": [
+      { "name": "1 star", "count": 500000 },
+      { "name": "2 star", "count": 300000 },
+      { "name": "3 star", "count": 1200000 },
+      { "name": "4 star", "count": 3000000 },
+      { "name": "5 star", "count": 5000000 }
+    ]
+  },
+  {
+    "id": 115,
+    "title": "Amazon Shopping",
+    "companyName": "Amazon Mobile LLC",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Amazon_icon.svg/1200px-Amazon_icon.svg.png",
+    "description": "Shop millions of products and manage your orders.",
+    "size": 130,
+    "reviews": "18M",
+    "ratingAvg": 4.3,
+    "downloads": "500M+",
+    "ratings": [
+      { "name": "1 star", "count": 2000000 },
+      { "name": "2 star", "count": 1000000 },
+      { "name": "3 star", "count": 2500000 },
+      { "name": "4 star", "count": 4500000 },
+      { "name": "5 star", "count": 8000000 }
+    ]
+  },
+  {
+    "id": 116,
+    "title": "Microsoft Word",
+    "companyName": "Microsoft Corporation",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Microsoft_Word_2013-2019_icon.svg/1200px-Microsoft_Word_2013-2019_icon.svg.png",
+    "description": "Create, edit, and share documents with others.",
+    "size": 95,
+    "reviews": "8M",
+    "ratingAvg": 4.5,
+    "downloads": "1B+",
+    "ratings": [
+      { "name": "1 star", "count": 300000 },
+      { "name": "2 star", "count": 200000 },
+      { "name": "3 star", "count": 800000 },
+      { "name": "4 star", "count": 2700000 },
+      { "name": "5 star", "count": 4000000 }
+    ]
+  },
+  {
+    "id": 117,
+    "title": "Call of Duty: Mobile",
+    "companyName": "Activision Publishing, Inc.",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/9/91/Call_of_Duty_Mobile_logo.png/1200px-Call_of_Duty_Mobile_logo.png",
+    "description": "Free-to-play multiplayer first-person shooter game.",
+    "size": 3800,
+    "reviews": "35M",
+    "ratingAvg": 4.3,
+    "downloads": "500M+",
+    "ratings": [
+      { "name": "1 star", "count": 4000000 },
+      { "name": "2 star", "count": 2000000 },
+      { "name": "3 star", "count": 5000000 },
+      { "name": "4 star", "count": 9000000 },
+      { "name": "5 star", "count": 15000000 }
+    ]
+  },
+  {
+    "id": 118,
+    "title": "Duolingo: Learn Languages",
+    "companyName": "Duolingo",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Duolingo_logo.svg/1200px-Duolingo_logo.svg.png",
+    "description": "Fun, effective, and free lessons for 40+ languages.",
+    "size": 135,
+    "reviews": "14M",
+    "ratingAvg": 4.6,
+    "downloads": "500M+",
+    "ratings": [
+      { "name": "1 star", "count": 500000 },
+      { "name": "2 star", "count": 300000 },
+      { "name": "3 star", "count": 1000000 },
+      { "name": "4 star", "count": 3200000 },
+      { "name": "5 star", "count": 9000000 }
+    ]
+  },
+  {
+    "id": 119,
+    "title": "Google Drive",
+    "companyName": "Google LLC",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Google_Drive_icon_%282020%29.svg/1200px-Google_Drive_icon_%282020%29.svg.png",
+    "description": "Secure cloud storage for all your files.",
+    "size": 45,
+    "reviews": "9M",
+    "ratingAvg": 4.4,
+    "downloads": "5B+",
+    "ratings": [
+      { "name": "1 star", "count": 400000 },
+      { "name": "2 star", "count": 300000 },
+      { "name": "3 star", "count": 1300000 },
+      { "name": "4 star", "count": 2500000 },
+      { "name": "5 star", "count": 4500000 }
+    ]
+  },
+  {
+    "id": 120,
+    "title": "Candy Crush Saga",
+    "companyName": "King",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/a/ab/Candy_Crush_Saga_logo.png/1200px-Candy_Crush_Saga_logo.png",
+    "description": "A match-three puzzle game with sweet treats.",
+    "size": 90,
+    "reviews": "40M",
+    "ratingAvg": 4.6,
+    "downloads": "1B+",
+    "ratings": [
+      { "name": "1 star", "count": 1500000 },
+      { "name": "2 star", "count": 1000000 },
+      { "name": "3 star", "count": 3500000 },
+      { "name": "4 star", "count": 10000000 },
+      { "name": "5 star", "count": 24000000 }
+    ]
+  },
+  {
+    "id": 121,
+    "title": "X (formerly Twitter)",
+    "companyName": "X Corp.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/X_logo_2023.svg/1200px-X_logo_2023.svg.png",
+    "description": "Real-time global conversations and news.",
+    "size": 120,
+    "reviews": "15M",
+    "ratingAvg": 3.7,
+    "downloads": "500M+",
+    "ratings": [
+      { "name": "1 star", "count": 3500000 },
+      { "name": "2 star", "count": 2500000 },
+      { "name": "3 star", "count": 3000000 },
+      { "name": "4 star", "count": 3000000 },
+      { "name": "5 star", "count": 3000000 }
+    ]
+  },
+  {
+    "id": 122,
+    "title": "Temu",
+    "companyName": "WhaleCo Inc.",
+    "image": "https://play-lh.googleusercontent.com/fL3k7X362c3f8JtW6Gq1i88n99vD2QxHq7Jv1V6-32dFvQ1R6i1S83IeB3qN-S-G-A=w240-h480-rw",
+    "description": "Shop smart and save big on millions of products.",
+    "size": 25,
+    "reviews": "6M",
+    "ratingAvg": 4.4,
+    "downloads": "500M+",
+    "ratings": [
+      { "name": "1 star", "count": 500000 },
+      { "name": "2 star", "count": 300000 },
+      { "name": "3 star", "count": 700000 },
+      { "name": "4 star", "count": 1500000 },
+      { "name": "5 star", "count": 3000000 }
+    ]
+  },
+  {
+    "id": 123,
+    "title": "Clash of Clans",
+    "companyName": "Supercell",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/3/36/Clash_of_Clans_game_logo.png/1200px-Clash_of_Clans_game_logo.png",
+    "description": "Build your village, train your troops, and go to war!",
+    "size": 250,
+    "reviews": "50M",
+    "ratingAvg": 4.5,
+    "downloads": "500M+",
+    "ratings": [
+      { "name": "1 star", "count": 2000000 },
+      { "name": "2 star", "count": 1500000 },
+      { "name": "3 star", "count": 4500000 },
+      { "name": "4 star", "count": 12000000 },
+      { "name": "5 star", "count": 30000000 }
+    ]
+  },
+  {
+    "id": 124,
+    "title": "Zoom Workplace",
+    "companyName": "Zoom Video Communications, Inc.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Zoom_video_conferencing_logo.svg/1200px-Zoom_video_conferencing_logo.svg.png",
+    "description": "Video conferencing, meetings, and collaboration.",
+    "size": 100,
+    "reviews": "7M",
+    "ratingAvg": 4.1,
+    "downloads": "500M+",
+    "ratings": [
+      { "name": "1 star", "count": 1000000 },
+      { "name": "2 star", "count": 800000 },
+      { "name": "3 star", "count": 1500000 },
+      { "name": "4 star", "count": 1700000 },
+      { "name": "5 star", "count": 2000000 }
+    ]
+  },
+  {
+    "id": 125,
+    "title": "Uber",
+    "companyName": "Uber Technologies, Inc.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Uber_App_Icon.svg/1200px-Uber_App_Icon.svg.png",
+    "description": "Request a ride and get where you're going easily and safely.",
+    "size": 155,
+    "reviews": "12M",
+    "ratingAvg": 4.2,
+    "downloads": "500M+",
+    "ratings": [
+      { "name": "1 star", "count": 1500000 },
+      { "name": "2 star", "count": 800000 },
+      { "name": "3 star", "count": 2000000 },
+      { "name": "4 star", "count": 3200000 },
+      { "name": "5 star", "count": 4500000 }
+    ]
+  },
+  {
+    "id": 126,
+    "title": "Tinder",
+    "companyName": "Match Group, LLC",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Tinder_logo.svg/1200px-Tinder_logo.svg.png",
+    "description": "The world's most popular app for meeting new people.",
+    "size": 110,
+    "reviews": "10M",
+    "ratingAvg": 3.8,
+    "downloads": "100M+",
+    "ratings": [
+      { "name": "1 star", "count": 2000000 },
+      { "name": "2 star", "count": 1500000 },
+      { "name": "3 star", "count": 2500000 },
+      { "name": "4 star", "count": 2000000 },
+      { "name": "5 star", "count": 2000000 }
+    ]
+  },
+  {
+    "id": 127,
+    "title": "Picsart AI Photo Editor",
+    "companyName": "PicsArt, Inc.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Picsart_logo.png/1200px-Picsart_logo.png",
+    "description": "AI-powered photo and video editing tools.",
+    "size": 160,
+    "reviews": "16M",
+    "ratingAvg": 4.3,
+    "downloads": "1B+",
+    "ratings": [
+      { "name": "1 star", "count": 1500000 },
+      { "name": "2 star", "count": 1000000 },
+      { "name": "3 star", "count": 2500000 },
+      { "name": "4 star", "count": 4000000 },
+      { "name": "5 star", "count": 7000000 }
+    ]
+  },
+  {
+    "id": 128,
+    "title": "Gmail",
+    "companyName": "Google LLC",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/1200px-Gmail_icon_%282020%29.svg.png",
+    "description": "Smart, simple, and secure email.",
+    "size": 55,
+    "reviews": "11M",
+    "ratingAvg": 4.1,
+    "downloads": "5B+",
+    "ratings": [
+      { "name": "1 star", "count": 1000000 },
+      { "name": "2 star", "count": 500000 },
+      { "name": "3 star", "count": 1500000 },
+      { "name": "4 star", "count": 3000000 },
+      { "name": "5 star", "count": 5000000 }
+    ]
+  },
+  {
+    "id": 129,
+    "title": "Roblox",
+    "companyName": "Roblox Corporation",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Roblox_Logo_2024.svg/1200px-Roblox_Logo_2024.svg.png",
+    "description": "Massively multiplayer online game creation platform.",
+    "size": 200,
+    "reviews": "40M",
+    "ratingAvg": 4.4,
+    "downloads": "500M+",
+    "ratings": [
+      { "name": "1 star", "count": 3000000 },
+      { "name": "2 star", "count": 2000000 },
+      { "name": "3 star", "count": 5000000 },
+      { "name": "4 star", "count": 10000000 },
+      { "name": "5 star", "count": 20000000 }
+    ]
+  }
+]

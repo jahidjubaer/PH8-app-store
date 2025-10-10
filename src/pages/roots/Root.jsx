@@ -9,9 +9,9 @@ const Roots = () => {
       {/* call which ar strict and outlet */}
       <Header></Header>
       {/* children of all roots show here  */}
-      <div className=" bg-gray-100 ">
-        <Outlet></Outlet>
-      </div>
+
+      <Outlet></Outlet>
+
       <Footer></Footer>
     </div>
   );
