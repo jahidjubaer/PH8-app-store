@@ -1,13 +1,16 @@
 import React from "react";
 import { FaStar } from "react-icons/fa";
 import { FiDownload } from "react-icons/fi";
+import { useNavigate } from "react-router";
 
 const TrendingApps = ({ appData }) => {
   // disturcture data ;
   const { image, title, ratingAvg, downloads } = appData;
+
+  const navigate = useNavigate();
   return (
     // card of each apps
-    <div className="p-4 bg-white shadow-lg rounded-lg">
+    <div onClick={() => navigate("/appDetails")} className="p-4 bg-white shadow-lg rounded-lg  border-2">
       <div className="bg-[#D9D9D9] w-[350px] h-[350px] mx-auto rounded-xl">
         <img src={image} className="w-full h-full object-cover rounded-xl" />
       </div>

@@ -16,10 +16,10 @@ const AppDetailsCard = () => {
             SmPlan:ToDo List with Reminder
           </h1>
           <p className=" text-[#001931] text-xl font-semibold mb-2">
-            Developed by{" "}
+            Developed by
             <span className="bg-gradient-to-r from-[#632EE3]  to-[#9F62F2] bg-clip-text text-transparent">
               productive.io
-            </span>{" "}
+            </span>
           </p>
           <div className="divider"></div>
         </div>
