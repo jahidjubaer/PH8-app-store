@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router";
+import { Link, Links, NavLink } from "react-router";
 import logo from "../../assets/logo.png";
 
 import { CgMenuLeftAlt } from "react-icons/cg";
@@ -52,12 +52,14 @@ const Header = () => {
               {listNav}
             </ul>
           </div>
-          <div className="flex">
-            <img className="w-10" src={logo} alt="" />
-            <a className="btn btn-ghost p-1 text-xl font-bold bg-gradient-to-r from-[#632EE3]  to-[#9F62F2] bg-clip-text text-transparent">
-              HERO.IO
-            </a>
-          </div>
+          <Link to="./">
+            <div className="flex">
+              <img className="w-10" src={logo} alt="" />
+              <button className="btn btn-ghost p-1 text-xl font-bold bg-gradient-to-r from-[#632EE3]  to-[#9F62F2] bg-clip-text text-transparent hover:border-none">
+                HERO.IO
+              </button>
+            </div>
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex ">
           <ul className="menu menu-horizontal space-x-8 px-1">

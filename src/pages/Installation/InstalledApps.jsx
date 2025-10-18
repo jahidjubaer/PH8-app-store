@@ -1,16 +1,20 @@
-import React, { useContext } from "react";
+import React from "react";
 import { FaStar } from "react-icons/fa";
 import { FiDownload } from "react-icons/fi";
 import { InstallContext } from "../roots/Root";
+import { RemoveAppsDB } from "../../utilities/InstalledCard";
+import { toast } from "react-toastify";
 
-const InstalledApps = ({ sortOrder }) => {
+const InstalledApps = ({ sortOrder, installedApps, setInstalledApps }) => {
   // data from context api ;
-  const { installedApps, setInstalledApps } = useContext(InstallContext);
+  //   const { installedApps, setInstalledApps } = useContext(InstallContext);
 
-  //   uninstall
+  //   uninstall handle 
   const uninstall = (id) => {
+     toast.warn("uninstall Successfully!");
     const updated = installedApps.filter((app) => app.id !== id);
     setInstalledApps(updated);
+    RemoveAppsDB(id);
   };
 
   //   sorted ;
@@ -22,8 +26,8 @@ const InstalledApps = ({ sortOrder }) => {
 
   return (
     <div className="space-y-6">
-      {sortedApps.map((app) => (
-        <div className="">
+      {sortedApps.map((app) =>  ( 
+        <div key={app.id}  className="">
           <div className="flex justify-between p-6 bg-white shadow-lg items-center rounded-xl">
             {/* left side */}
             <div className="flex gap-4 items-center">

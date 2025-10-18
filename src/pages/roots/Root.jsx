@@ -2,18 +2,21 @@
 import Header from "../../components/header/Header";
 import { Outlet } from "react-router";
 import Footer from "../../components/footer/Footer";
-import { createContext, useState } from "react";
+import { createContext, Suspense } from "react";
 export const InstallContext = createContext();
-
+import { ToastContainer } from "react-toastify";
 const Roots = () => {
-  const [installedApps, setInstalledApps] = useState([]);
-
   return (
-    <InstallContext.Provider value={{ installedApps, setInstalledApps }}>
+    <div>
       <Header />
-      <Outlet />
+      <Suspense
+        fallback={<span className="loading loading-bars loading-xl"></span>}
+      >
+        <Outlet />
+      </Suspense>
       <Footer />
-    </InstallContext.Provider>
+      <ToastContainer />
+    </div>
   );
 };
 

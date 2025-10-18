@@ -1,16 +1,29 @@
-import React, { useState } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import { useLoaderData } from "react-router";
 import TrendingApps from "../home/TrendingApps";
 import { CiSearch } from "react-icons/ci";
 
 const Apps = () => {
   const allAppsData = useLoaderData();
-  const [searchTerm, setSearchTerm] = useState("");
+  const [search, setSearch] = useState("");
+  const [filteredApps, setFilteredApps] = useState(allAppsData);
+  const [loading, setLoading] = useState(false);
 
-  // Filter apps based on search input
-  const filteredApps = allAppsData.filter((app) =>
-    app.title.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  useEffect(() => {
+    // Show loading animation while searching
+    setLoading(true);
+
+    // searching
+    const timer = setTimeout(() => {
+      const results = allAppsData.filter((app) =>
+        app.title.toLowerCase().includes(search.toLowerCase())
+      );
+      setFilteredApps(results);
+      setLoading(false);
+    }, 400);
+
+    return () => clearTimeout(timer);
+  }, [search, allAppsData]);
 
   return (
     <div className="bg-gray-100 py-20">
@@ -32,24 +45,34 @@ const Apps = () => {
 
           <input
             type="search"
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
             placeholder="Search"
             className="input pl-10 w-full sm:w-64"
           />
         </div>
         {/* all apps */}
-        <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2  gap-4">
-          {filteredApps.length > 0 ? (
-            filteredApps.map((appData) => (
-              <TrendingApps key={appData.id} appData={appData} />
-            ))
+        <Suspense
+          fallback={<span className="loading loading-bars loading-xl"></span>}
+        >
+          {loading ? (
+            <div className="flex justify-center mt-10">
+              <span className="loading loading-bars loading-xl"></span>
+            </div>
           ) : (
-            <p className="col-span-full text-center text-gray-500 mt-10">
-              No apps found for "{searchTerm}"
-            </p>
+            <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-4">
+              {filteredApps.length > 0 ? (
+                filteredApps.map((appData) => (
+                  <TrendingApps key={appData.id} appData={appData} />
+                ))
+              ) : (
+                <p className="col-span-full text-center text-gray-500 mt-10">
+                  No apps found for "{search}"
+                </p>
+              )}
+            </div>
           )}
-        </div>
+        </Suspense>
       </div>
     </div>
   );

@@ -1,18 +1,31 @@
-import React, { useContext, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import { IoCaretDown } from "react-icons/io5";
 import { InstallContext } from "../roots/Root";
 import InstalledApps from "./InstalledApps";
+import { useLoaderData } from "react-router";
+import { getAppsStr } from "../../utilities/InstalledCard";
 
 const Installation = () => {
-  // data from context api ;
-  const { installedApps } = useContext(InstallContext);
-
-  const installedAppData = installedApps;
-  // console.log(installedAppData);
-
-  // sort
+  const allAppsData = useLoaderData(); 
+  const [installedApps, setInstalledApps] = useState([]);
   const [sortOrder, setSortOrder] = useState("default");
+
+  // Load installed apps from localStorage
+  useEffect(() => {
+    const storedApps = getAppsStr() || [];
+
+    // convert id into number ;
+    const convertedIntData = storedApps.map((id) => parseInt(id));
+
+    // Filter apps that match stored IDs
+    const myAppsList = allAppsData.filter((app) =>
+      convertedIntData.includes(app.id)
+    );
+
+    // Set the filtered list 
+    setInstalledApps(myAppsList);
+  }, [allAppsData]);
 
   return (
     <div className="bg-gray-100 py-20  min-h-[76vh]">
@@ -47,12 +60,12 @@ const Installation = () => {
             </ul>
           </details>
         </div>
-        {installedAppData.length === 0 ? (
+        {installedApps.length === 0 ? (
           <p className="text-center text-gray-500 text-lg mt-10">
             No apps installed yet.
           </p>
         ) : (
-          <InstalledApps sortOrder={sortOrder} />
+          <InstalledApps installedApps={installedApps} setInstalledApps={setInstalledApps} sortOrder={sortOrder} />
         )}
       </div>
     </div>

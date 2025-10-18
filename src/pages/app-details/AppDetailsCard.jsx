@@ -1,17 +1,20 @@
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 import downloadImg from "../../assets/icon-downloads.png";
 import ratingImg from "../../assets/icon-ratings.png";
 import reviewImg from "../../assets/icon-review.png";
-import Roots from "../roots/Root";
-import { InstallContext } from "../roots/Root";
+import { AddAppsDB } from "../../utilities/InstalledCard";
+import { toast } from "react-toastify";
 
 const AppDetailsCard = ({ appData }) => {
+  const StoreApps = localStorage.getItem("installedCard");
+  console.log(StoreApps);
+
   // distructering the data ;
-  const { title, companyName, reviews, size, downloads, ratings, image } =
+  const { id, title, companyName, reviews, size, downloads, ratings, image } =
     appData;
 
-  // install context
-  const { installedApps, setInstalledApps } = useContext(InstallContext);
+  // install context : comment it bz use local storage ;
+  // const { installedApps, setInstalledApps } = useContext(InstallContext);
 
   // find the avg rating ;
   let totalRating = 0;
@@ -28,17 +31,19 @@ const AppDetailsCard = ({ appData }) => {
   const [Install, setInstall] = useState(false);
 
   // handle install btn ;
-  const handleInstall = () => {
+  const handleInstall = (id) => {
+    !Install && toast.success("install Successfully!");
     if (Install) return;
-    // set installed app in context ; 
-    const newInstalled = [...installedApps, appData];
-    setInstalledApps(newInstalled);
+    // set installed app in context ;
+    // const newInstalled = [...installedApps, appData];
+    // setInstalledApps(newInstalled);
 
+    // by local store function call
+    AddAppsDB(id);
     setInstall(true);
   };
 
   // console.log(installedApps);
-  
 
   return (
     <div className="flex gap-10">
@@ -88,12 +93,14 @@ const AppDetailsCard = ({ appData }) => {
         </div>
         {/* instal now btn  */}
         <button
-          onClick={handleInstall}
+          onClick={() => handleInstall(id)}
           className={`  ${
             !Install && "disabled"
           } btn bg-[#00D390] border-none text-white mt-5`}
         >
-          {Install ? "Installed" : `Installed Now ( ${size} MB )`}
+          {StoreApps.includes(id) || Install
+            ? "Installed"
+            : `Installed Now ( ${size} MB )`}
         </button>
       </div>
     </div>

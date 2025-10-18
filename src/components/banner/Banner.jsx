@@ -24,7 +24,7 @@ const Banner = () => {
         </p>
 
         <div className="flex justify-center gap-3 mt-10">
-          <Link>
+          <Link to="https://play.google.com/store/apps?hl=en" target="blank">
             <button className="btn font-medium text-xl p-3 flex items-center ">
               <div className=" w-7 ">
                 <img src={playSotre} alt="" />
@@ -32,7 +32,7 @@ const Banner = () => {
               <span>Play Store</span>
             </button>
           </Link>
-          <Link>
+          <Link to="https://www.apple.com/app-store/" target="blank">
             <button className="btn font-medium text-xl p-3 flex items-center ">
               <div className=" w-7 ">
                 <img src={appStore} alt="" />
