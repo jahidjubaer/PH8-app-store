@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import Header from "../../components/header/Header";
 import { Outlet } from "react-router";
 import Footer from "../../components/footer/Footer";

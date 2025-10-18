@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 
 import { IoCaretDown } from "react-icons/io5";
 import { InstallContext } from "../roots/Root";
@@ -9,10 +9,13 @@ const Installation = () => {
   const { installedApps } = useContext(InstallContext);
 
   const installedAppData = installedApps;
-  console.log(installedAppData);
+  // console.log(installedAppData);
+
+  // sort
+  const [sortOrder, setSortOrder] = useState("default");
 
   return (
-    <div className="bg-gray-100 py-20  h-[76vh]">
+    <div className="bg-gray-100 py-20  min-h-[76vh]">
       <div className="w-11/12 lg:w-10/12 mx-auto ">
         {/* header */}
         <div className="text-center">
@@ -32,10 +35,14 @@ const Installation = () => {
             </summary>
             <ul className="menu dropdown-content bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
               <li>
-                <a>Item 1</a>
+                <button onClick={() => setSortOrder("High-Low")}>
+                  High-Low
+                </button>
               </li>
               <li>
-                <a>Item 2</a>
+                <button onClick={() => setSortOrder("Low-High")}>
+                  Low-High
+                </button>
               </li>
             </ul>
           </details>
@@ -45,7 +52,7 @@ const Installation = () => {
             No apps installed yet.
           </p>
         ) : (
-          <InstalledApps />
+          <InstalledApps sortOrder={sortOrder} />
         )}
       </div>
     </div>
