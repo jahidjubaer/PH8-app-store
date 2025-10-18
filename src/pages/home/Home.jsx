@@ -3,6 +3,7 @@ import Banner from "../../components/banner/Banner";
 import TrendingApps from "./TrendingApps";
 import { useLoaderData } from "react-router";
 import AppDetails from "../app-details/AppDetails";
+import { Link } from "react-router";
 
 const Home = () => {
   const TrendingAppsData = useLoaderData();
@@ -24,9 +25,15 @@ const Home = () => {
             <TrendingApps key={appData.id} appData={appData}></TrendingApps>
           ))}
         </div>
+        {/* show all btn  */}
+        <div className="flex justify-center my-6 ">
+          <Link to="/apps">
+            <button className="btn py-5 px-10 bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white text-xl flex items-center gap-2">
+              Show All
+            </button>
+          </Link>
+        </div>
       </div>
-
-      
     </div>
   );
 };

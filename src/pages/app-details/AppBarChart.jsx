@@ -9,17 +9,13 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
-const data = [
-  { name: "5 star", pv: 800 },
-  { name: "4 star", pv: 967 },
-  { name: "3 star", pv: 1098 },
-  { name: "2 star", pv: 1200 },
-  { name: "1 star", pv: 1108 },
-];
+const AppBarChart = ({ appData }) => {
+  // data of ratings form appData , i mean database ; 
+  const data = appData.ratings;
 
-const AppBarChart = () => {
+  // bar chart using rechart of react ; 
   return (
-    <div className="lg:w-10/12 w-11/12 mx-auto h-96  p-4 ">
+    <div className="lg:w-10/12 w-11/12 mx-auto h-96  mb-10 ">
       <h2 className="text-lg font-semibold mb-3">Rating </h2>
       <ResponsiveContainer width="100%" height="100%">
         <ComposedChart
@@ -31,7 +27,12 @@ const AppBarChart = () => {
           <YAxis dataKey="name" type="category" scale="band" />
           <Tooltip />
           <Legend></Legend>
-          <Bar dataKey="pv" barSize={40} fill="#ff7300" radius={[4, 4, 4, 4]} />
+          <Bar
+            dataKey="count"
+            barSize={40}
+            fill="#ff7300"
+            radius={[4, 4, 4, 4]}
+          />
         </ComposedChart>
       </ResponsiveContainer>
     </div>

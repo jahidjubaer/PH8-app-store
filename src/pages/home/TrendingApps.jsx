@@ -7,12 +7,11 @@ const TrendingApps = ({ appData }) => {
   // disturcture data ;
   const { id, image, title, ratingAvg, downloads } = appData;
   // console.log(id);
-  
 
   return (
     // card of each apps
     <Link to={`/appDetails/${id}`}>
-      <div className="p-4 bg-white shadow-lg rounded-lg  border-2">
+      <div className="p-4 bg-white shadow-lg rounded-lg  ">
         <div className="bg-[#D9D9D9] w-[350px] h-[350px] mx-auto rounded-xl">
           <img src={image} className="w-full h-full object-cover rounded-xl" />
         </div>

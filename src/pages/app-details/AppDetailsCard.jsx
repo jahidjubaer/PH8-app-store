@@ -3,9 +3,11 @@ import downloadImg from "../../assets/icon-downloads.png";
 import ratingImg from "../../assets/icon-ratings.png";
 import reviewImg from "../../assets/icon-review.png";
 const AppDetailsCard = ({ appData }) => {
-  console.log(appData);
+  // distructering the data ;
+  const { title, companyName, reviews, size, downloads, ratings, image } =
+    appData;
 
-  const { title, companyName, reviews, size, downloads, ratings, image } = appData;
+  // find the avg rating ;
   let totalRating = 0;
   let i = 1;
   let numberOfPeopleRated = 0;
@@ -14,14 +16,11 @@ const AppDetailsCard = ({ appData }) => {
     i++;
     numberOfPeopleRated += data.count;
   });
-
   const avgRating = (totalRating / numberOfPeopleRated).toFixed(1);
-
-  console.log(avgRating);
 
   return (
     <div className="flex gap-10">
-      <div className="w-[350px] h-[350px] bg-amber-300">
+      <div className="w-[350px] h-[350px] bg-gray-100">
         <img src={image} alt="" className="w-full h-full object-cover" />
       </div>
 
@@ -52,7 +51,9 @@ const AppDetailsCard = ({ appData }) => {
             <img src={ratingImg} alt="" />
 
             <p className="text-[#001931]">Average Ratings</p>
-            <h1 className=" text-4xl text-[#001931] font-semibold ">{avgRating}</h1>
+            <h1 className=" text-4xl text-[#001931] font-semibold ">
+              {avgRating}
+            </h1>
           </div>
           <div className=" space-y-2 ">
             <img src={reviewImg} alt="" />
