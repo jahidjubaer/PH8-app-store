@@ -32,7 +32,9 @@ const AppDetails = () => {
 
       <div className="w-11/12 lg:w-10/12 mx-auto">
         <div className="divider py"></div>
-        <h1 className=" text-2xl mb-4 font-semibold text-[#001931] ">Description</h1>
+        <h1 className=" text-2xl mb-4 font-semibold text-[#001931] ">
+          Description
+        </h1>
         <p className=" text-[#627382] text-xl ">{description}</p>
       </div>
     </div>

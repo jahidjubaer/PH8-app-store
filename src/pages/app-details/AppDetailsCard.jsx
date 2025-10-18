@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import downloadImg from "../../assets/icon-downloads.png";
 import ratingImg from "../../assets/icon-ratings.png";
 import reviewImg from "../../assets/icon-review.png";
+import Roots from "../roots/Root";
+import { InstallContext } from "../roots/Root";
+
 const AppDetailsCard = ({ appData }) => {
   // distructering the data ;
   const { title, companyName, reviews, size, downloads, ratings, image } =
     appData;
+
+  // install context
+  const { installedApps, setInstalledApps } = useContext(InstallContext);
 
   // find the avg rating ;
   let totalRating = 0;
@@ -17,6 +23,22 @@ const AppDetailsCard = ({ appData }) => {
     numberOfPeopleRated += data.count;
   });
   const avgRating = (totalRating / numberOfPeopleRated).toFixed(1);
+
+  // install btn ;
+  const [Install, setInstall] = useState(false);
+
+  // handle install btn ;
+  const handleInstall = () => {
+    if (Install) return;
+    // set installed app in context ; 
+    const newInstalled = [...installedApps, appData];
+    setInstalledApps(newInstalled);
+
+    setInstall(true);
+  };
+
+  // console.log(installedApps);
+  
 
   return (
     <div className="flex gap-10">
@@ -64,8 +86,14 @@ const AppDetailsCard = ({ appData }) => {
             </h1>
           </div>
         </div>
-        <button className="btn bg-[#00D390] border-none text-white mt-5">
-          Install Now ( {size} MB )
+        {/* instal now btn  */}
+        <button
+          onClick={handleInstall}
+          className={`  ${
+            !Install && "disabled"
+          } btn bg-[#00D390] border-none text-white mt-5`}
+        >
+          {Install ? "Installed" : `Installed Now ( ${size} MB )`}
         </button>
       </div>
     </div>

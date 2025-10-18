@@ -14,11 +14,13 @@ export const router = createBrowserRouter([
     path: "/",
     Component: Roots,
     // error element need to call with as element not component
-    errorElement: <div >
-      <Header></Header>
-      <ErrorPage></ErrorPage>
-      <Footer></Footer>
-    </div>,
+    errorElement: (
+      <div>
+        <Header></Header>
+        <ErrorPage></ErrorPage>
+        <Footer></Footer>
+      </div>
+    ),
     // this is children of root , it will show in outlet of roots
     children: [
       {
@@ -40,8 +42,8 @@ export const router = createBrowserRouter([
       {
         path: "/appDetails/:id",
         loader: () => fetch("/AllApps.json"),
-        Component: AppDetails,
-      }
+        element: <AppDetails ></AppDetails>
+      },
     ],
   },
 ]);
