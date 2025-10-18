@@ -2,6 +2,7 @@ import React from "react";
 import Banner from "../../components/banner/Banner";
 import TrendingApps from "./TrendingApps";
 import { useLoaderData } from "react-router";
+import AppDetails from "../app-details/AppDetails";
 
 const Home = () => {
   const TrendingAppsData = useLoaderData();
@@ -24,6 +25,8 @@ const Home = () => {
           ))}
         </div>
       </div>
+
+      
     </div>
   );
 };
