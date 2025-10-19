@@ -6,7 +6,7 @@ import Footer from "../components/footer/Footer";
 import { lazy, Suspense } from "react";
 
 // Lazy-loaded pages
-const Home = lazy(() => import("../pages/home/home"));
+const Home = lazy(() => import("../pages/home/Home"));
 const Apps = lazy(() => import("../pages/Apps/Apps"));
 const Installation = lazy(() => import("../pages/Installation/Installation"));
 const AppDetails = lazy(() => import("../pages/app-details/AppDetails"));
