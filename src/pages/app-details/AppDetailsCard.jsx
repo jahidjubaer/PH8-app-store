@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import downloadImg from "../../assets/icon-downloads.png";
 import ratingImg from "../../assets/icon-ratings.png";
 import reviewImg from "../../assets/icon-review.png";
@@ -27,25 +27,29 @@ const AppDetailsCard = ({ appData }) => {
   });
   const avgRating = (totalRating / numberOfPeopleRated).toFixed(1);
 
-  // install btn ;
-  const [Install, setInstall] = useState(false);
+  // state for install button
+  const [isInstalled, setIsInstalled] = useState(false);
 
-  // handle install btn ;
+  // cheek if the id has in local storage ;
+  useEffect(() => {
+    const storedApps = JSON.parse(localStorage.getItem("installedCard")) || [];
+    if (storedApps.includes(id)) {
+      setIsInstalled(true);
+    }
+  }, [id]);
+
+  // Handle install button
   const handleInstall = (id) => {
-    if (Install) return;
-    // set installed app in context ;
-    // const newInstalled = [...installedApps, appData];
-    // setInstalledApps(newInstalled);
+    const storedApps = JSON.parse(localStorage.getItem("installedCard")) || [];
 
-    // by local store function call
-    AddAppsDB(id);
-    !Install &&
-      !StoreApps.includes(id) &&
-      toast.success(`${title}install Successfully! `);
-    !StoreApps.includes(id) && setInstall(true);
+    if (isInstalled) return;
+
+    if (!storedApps.includes(id)) {
+      AddAppsDB(id);
+      toast.success(`${title} installed successfully!`);
+      setIsInstalled(true);
+    }
   };
-
-  // console.log(installedApps);
 
   return (
     <div className="flex gap-10">
@@ -97,12 +101,10 @@ const AppDetailsCard = ({ appData }) => {
         <button
           onClick={() => handleInstall(id)}
           className={`  ${
-            Install && "disabled "
+            isInstalled && "disabled "
           } btn bg-[#00D390] border-none text-white mt-5`}
         >
-          {StoreApps.includes(id) || Install
-            ? "Installed"
-            : `Installed Now ( ${size} MB )`}
+          {isInstalled ? "Installed" : `Installed Now ( ${size} MB )`}
         </button>
       </div>
     </div>
