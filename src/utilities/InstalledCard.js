@@ -1,3 +1,5 @@
+
+
 // get the books list if store any ;
 const getAppsStr = () => {
   const StoreApps = localStorage.getItem("installedCard");
@@ -13,9 +15,7 @@ const getAppsStr = () => {
 const AddAppsDB = (id) => {
   const StoredApps = getAppsStr();
 
-  if (StoredApps.includes(id)) {
-    alert("Already have ");
-  } else {
+  if (!StoredApps.includes(id)) {
     StoredApps.push(id);
     const data = JSON.stringify(StoredApps);
     localStorage.setItem("installedCard", data);

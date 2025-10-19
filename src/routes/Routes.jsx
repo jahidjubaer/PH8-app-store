@@ -1,12 +1,15 @@
 import { createBrowserRouter } from "react-router";
 import Roots from "../pages/roots/Root";
-import Home from "../pages/home/home";
 import ErrorPage from "../pages/error-page/ErrorPage";
-import Apps from "../pages/Apps/Apps";
-import Installation from "../pages/Installation/Installation";
-import AppDetails from "../pages/app-details/AppDetails";
 import Header from "../components/header/Header";
 import Footer from "../components/footer/Footer";
+import { lazy, Suspense } from "react";
+
+// Lazy-loaded pages
+const Home = lazy(() => import("../pages/home/home"));
+const Apps = lazy(() => import("../pages/Apps/Apps"));
+const Installation = lazy(() => import("../pages/Installation/Installation"));
+const AppDetails = lazy(() => import("../pages/app-details/AppDetails"));
 
 // we crete router here and export it ,
 export const router = createBrowserRouter([
@@ -28,22 +31,62 @@ export const router = createBrowserRouter([
         path: "/",
         // load the books data in home page ;
         loader: () => fetch("/TrendingApps.json"),
-        Component: Home,
+        element: (
+          <Suspense
+            fallback={
+              <div className="flex items-center justify-center h-screen">
+                <span className="loading loading-bars loading-xl"></span>
+              </div>
+            }
+          >
+            <Home />
+          </Suspense>
+        ),
       },
       {
         path: "/apps",
-        Component: Apps,
+        element: (
+          <Suspense
+            fallback={
+              <div className="flex items-center justify-center h-screen">
+                <span className="loading loading-bars loading-xl"></span>
+              </div>
+            }
+          >
+            <Apps />
+          </Suspense>
+        ),
         loader: () => fetch("/AllApps.json"),
       },
       {
         path: "/installation",
-        Component: Installation,
+        element: (
+          <Suspense
+            fallback={
+              <div className="flex items-center justify-center h-screen">
+                <span className="loading loading-bars loading-xl"></span>
+              </div>
+            }
+          >
+            <Installation />
+          </Suspense>
+        ),
         loader: () => fetch("/AllApps.json"),
       },
       {
         path: "/appDetails/:id",
         loader: () => fetch("/AllApps.json"),
-        element: <AppDetails></AppDetails>,
+        element: (
+          <Suspense
+            fallback={
+              <div className="flex items-center justify-center h-screen">
+                <span className="loading loading-bars loading-xl"></span>
+              </div>
+            }
+          >
+            <AppDetails />
+          </Suspense>
+        ),
       },
     ],
   },

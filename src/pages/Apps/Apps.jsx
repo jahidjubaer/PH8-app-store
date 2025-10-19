@@ -26,7 +26,7 @@ const Apps = () => {
   }, [search, allAppsData]);
 
   return (
-    <div className="bg-gray-100 py-20">
+    <div className="bg-gray-100 py-20 min-h-[80vh] ">
       <div className="w-11/12 lg:w-10/12 mx-auto ">
         {/* header */}
         <div className="text-center">
@@ -43,13 +43,15 @@ const Apps = () => {
             ({filteredApps.length}) Apps Found
           </h1>
 
-          <input
-            type="search"
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            placeholder="Search"
-            className="input pl-10 w-full sm:w-64"
-          />
+          <div className="input pl-10 w-full sm:w-64 flex items-center">
+            <span><CiSearch></CiSearch></span>
+            <input
+              type="search"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              placeholder="Search"
+            />
+          </div>
         </div>
         {/* all apps */}
         <Suspense

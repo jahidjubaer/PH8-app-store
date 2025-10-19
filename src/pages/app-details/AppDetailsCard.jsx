@@ -7,7 +7,7 @@ import { toast } from "react-toastify";
 
 const AppDetailsCard = ({ appData }) => {
   const StoreApps = localStorage.getItem("installedCard");
-  console.log(StoreApps);
+  // console.log(StoreApps);
 
   // distructering the data ;
   const { id, title, companyName, reviews, size, downloads, ratings, image } =
@@ -32,7 +32,6 @@ const AppDetailsCard = ({ appData }) => {
 
   // handle install btn ;
   const handleInstall = (id) => {
-    !Install && toast.success("install Successfully!");
     if (Install) return;
     // set installed app in context ;
     // const newInstalled = [...installedApps, appData];
@@ -40,7 +39,10 @@ const AppDetailsCard = ({ appData }) => {
 
     // by local store function call
     AddAppsDB(id);
-    setInstall(true);
+    !Install &&
+      !StoreApps.includes(id) &&
+      toast.success(`${title}install Successfully! `);
+    !StoreApps.includes(id) && setInstall(true);
   };
 
   // console.log(installedApps);
@@ -95,7 +97,7 @@ const AppDetailsCard = ({ appData }) => {
         <button
           onClick={() => handleInstall(id)}
           className={`  ${
-            !Install && "disabled"
+            Install && "disabled "
           } btn bg-[#00D390] border-none text-white mt-5`}
         >
           {StoreApps.includes(id) || Install

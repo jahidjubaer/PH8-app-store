@@ -17,6 +17,9 @@ const AppDetails = () => {
 
   const { description } = appData;
 
+  // console.log(appData);
+  
+
   return (
     <div className="bg-gray-100 p-20">
       {/* container  */}
