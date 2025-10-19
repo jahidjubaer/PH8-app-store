@@ -7,7 +7,7 @@ The project demonstrates strong skills in **React**, **localStorage**, **routing
 
 ## 🌐 Live Demo
 
-🔗 [Visit the Deployed Site](https://apps-store-jh.netlify.app/)  
+🔗 [Visit the Deployed Site](https://apps-store-jh1.netlify.app/)  
 _(Hosted on Netlify )_
 
 ---
