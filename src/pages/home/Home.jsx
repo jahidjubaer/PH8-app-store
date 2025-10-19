@@ -15,7 +15,7 @@ const Home = () => {
 
       {/* Trending Apps */}
       <div className="w-11/12 lg:w-10/12 mx-auto text-center mt-20 pb-10">
-        <h1 className="text-5xl mb-4 font-bold ">Trending Apps Data</h1>
+        <h1 className="sm:text-5xl text-3xl mb-4 font-bold ">Trending Apps Data</h1>
         <p className=" text-[#627382] text-xl mb-10 ">
           Explore All Trending Apps on the Market developed by us
         </p>

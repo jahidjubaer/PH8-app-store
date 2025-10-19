@@ -9,7 +9,7 @@ const Banner = () => {
     <div className="">
       {/* text hero  */}
       <div className="text-center pt-20 mb-10 lg:w-10/12 w-11/12 mx-auto ">
-        <h1 className="text-7xl font-bold mb-6">
+        <h1 className="sm:text-7xl text-4xl font-bold mb-6">
           We Build <br />{" "}
           <span className="bg-gradient-to-r from-[#632EE3]  to-[#9F62F2] bg-clip-text text-transparent">
             Productive

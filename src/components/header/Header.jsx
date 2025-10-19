@@ -37,11 +37,11 @@ const Header = () => {
     </>
   );
   return (
-    <div className=" bg-white shadow-sm">
+    <div className=" bg-white shadow-sm sticky top-0 z-50">
       <div className="navbar lg:w-10/12 w-11/12 mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+            <div tabIndex={0} role="button" className="mr-1 text-2xl font-bold text-[#632EE3] lg:hidden">
               <CgMenuLeftAlt></CgMenuLeftAlt>
             </div>
             <ul
@@ -67,9 +67,9 @@ const Header = () => {
             {listNav}
           </ul>
         </div>
-        <div className="navbar-end">
+        <div className="sm:navbar-end">
           <a href="https://github.com/jahidjubaer/" target="_blank">
-            <button className="btn py-5 bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white text-xl flex items-center gap-2">
+            <button className="btn lg:py-5 bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white text-xl flex items-center gap-2">
               <FaGithub /> Contribute
             </button>
           </a>

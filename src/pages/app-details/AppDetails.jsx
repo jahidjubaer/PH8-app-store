@@ -18,10 +18,9 @@ const AppDetails = () => {
   const { description } = appData;
 
   // console.log(appData);
-  
 
   return (
-    <div className="bg-gray-100 p-20">
+    <div className="bg-gray-100  py-10">
       {/* container  */}
       <div className="w-11/12 lg:w-10/12 mx-auto">
         {/* card */}
@@ -30,8 +29,10 @@ const AppDetails = () => {
         <div className="divider"></div>
       </div>
 
-      {/* bar chart  */}
-      <AppBarChart appData={appData}></AppBarChart>
+      {/* bar chart */}
+      <div className=" p-4 sm:p-6 lg:p-8">
+        <AppBarChart appData={appData} />
+      </div>
 
       <div className="w-11/12 lg:w-10/12 mx-auto">
         <div className="divider py"></div>

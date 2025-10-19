@@ -43,7 +43,7 @@ const Apps = () => {
             ({filteredApps.length}) Apps Found
           </h1>
 
-          <div className="input pl-10 w-full sm:w-64 flex items-center">
+          <div className="input pl-10 w-40 sm:w-60 ">
             <span><CiSearch></CiSearch></span>
             <input
               type="search"

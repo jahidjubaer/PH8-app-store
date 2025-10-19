@@ -52,8 +52,8 @@ const AppDetailsCard = ({ appData }) => {
   };
 
   return (
-    <div className="flex gap-10">
-      <div className="w-[350px] h-[350px] bg-gray-100">
+    <div className="lg:flex gap-10">
+      <div className="sm:w-[350px] w-[250px]  sm:h-[350px] h-[250px] bg-gray-100">
         <img src={image} alt="" className="w-full h-full object-cover" />
       </div>
 
